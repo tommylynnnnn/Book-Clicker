@@ -1,34 +1,25 @@
-body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-  background: #f4efe6;
-  height: 100vh;
-}
-
-/* Move everything slightly higher and left-aligned layout */
 #game {
   position: absolute;
   top: 10%;
   left: 15%;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center; /* ⬅️ this is the key change */
   gap: 15px;
 }
 
-/* Title higher up */
 h1 {
   margin: 0;
   font-size: 32px;
+  text-align: center;
 }
 
-/* Counter above the book */
 #counter {
   font-size: 24px;
   font-weight: bold;
+  text-align: center;
 }
 
-/* Make book MUCH bigger and push it slightly left-middle feel */
 #bookBtn {
   font-size: 180px;
   background: none;
@@ -38,7 +29,6 @@ h1 {
   margin-top: 10px;
 }
 
-/* click feedback */
 #bookBtn:active {
   transform: scale(0.9);
 }
