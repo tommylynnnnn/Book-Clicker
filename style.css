@@ -1,23 +1,29 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f4efe6;
+  height: 100vh;
+}
+
+/* GAME LEFT SIDE */
 #game {
   position: absolute;
   top: 10%;
   left: 15%;
   display: flex;
   flex-direction: column;
-  align-items: center; /* ⬅️ this is the key change */
+  align-items: center;
   gap: 15px;
 }
 
 h1 {
   margin: 0;
   font-size: 32px;
-  text-align: center;
 }
 
 #counter {
   font-size: 24px;
   font-weight: bold;
-  text-align: center;
 }
 
 #bookBtn {
@@ -26,9 +32,39 @@ h1 {
   border: none;
   cursor: pointer;
   transition: transform 0.1s ease;
-  margin-top: 10px;
 }
 
 #bookBtn:active {
   transform: scale(0.9);
+}
+
+/* 🛒 SHOP RIGHT SIDE */
+#shop {
+  position: absolute;
+  top: 10%;
+  right: 10%;
+  width: 220px;
+  background: #fff7e6;
+  padding: 15px;
+  border-radius: 12px;
+  border: 2px solid #d9c7a3;
+}
+
+#shop h2 {
+  margin-top: 0;
+}
+
+#shop button {
+  width: 100%;
+  padding: 10px;
+  cursor: pointer;
+  border: none;
+  border-radius: 8px;
+  background: #e3caa5;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+#shop button:active {
+  transform: scale(0.97);
 }
