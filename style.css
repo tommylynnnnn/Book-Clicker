@@ -2,37 +2,43 @@ body {
   margin: 0;
   font-family: Arial, sans-serif;
   background: #f4efe6;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   height: 100vh;
-  text-align: center;
 }
 
+/* Move everything slightly higher and left-aligned layout */
 #game {
+  position: absolute;
+  top: 10%;
+  left: 15%;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  gap: 20px;
+  align-items: flex-start;
+  gap: 15px;
 }
 
+/* Title higher up */
 h1 {
   margin: 0;
+  font-size: 32px;
 }
 
+/* Counter above the book */
 #counter {
   font-size: 24px;
   font-weight: bold;
 }
 
+/* Make book MUCH bigger and push it slightly left-middle feel */
 #bookBtn {
-  font-size: 120px;
+  font-size: 180px;
   background: none;
   border: none;
   cursor: pointer;
   transition: transform 0.1s ease;
+  margin-top: 10px;
 }
 
+/* click feedback */
 #bookBtn:active {
   transform: scale(0.9);
 }
